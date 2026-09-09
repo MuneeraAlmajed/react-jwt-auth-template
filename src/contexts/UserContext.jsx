@@ -20,7 +20,7 @@ const getUserFromToken= () =>{
       const tokenJson = atob(payload);
 
       //take that josn and convert it back into json
-      return JSON.parse(tokenJson);
+      return JSON.parse(tokenJson).payload;
 }
 
 function UserProvider({ children }) {
